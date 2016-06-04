@@ -3,45 +3,51 @@
     <head> 
         <meta charset="UTF-8">
         <title> practice </title>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="main.css" />
     </head>
     <body>
-        <header>
+        <div id="header">
 				<div class="top">
 						<div id="logo">
-						<img src="way-on.jpg" alt="logo" />
-							<h1>Roland Umba</h1>
+						<span class="avatar"><img src="way-on.jpg" alt="logo" width="78" height="48" /></span>
+							<h1 class="title">Roland Umba</h1>
 							<p>Telecom Engineer and front end developer</p>
 						</div>
-						<nav>
-                            <ul>
-								<li><a href="#top">Intro</a></li>
-								<li><a href="#portfolio">Portfolio</a></li>
-								<li><a href="#about">About Me</a></li>
-								<li><a href="#contact">Contact</a></li>
+						<nav id="nav">
+                            <ul >
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+								<li><a href="#portfolio"  id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
 				</div>
 				<div class="bottom">
-						<ul>
-							<li><a href="https://twitter.com/?lang=fr">Twitter</a></li>
-							<li><a href="https://www.facebook.com/roland.umbandolo">Facebook</a></li>
-							<li><a href="https://github.com/">Github</a></li>
-							<li><a href="https://www.google.com/intl/fr/mail/help/about.html">Email</a></li>
+						<ul class="icons">
+							<li><a href="https://twitter.com/?lang=fr" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/roland.umbandolo" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.google.com/intl/fr/mail/help/about.html" class="icon fa-gmail"><span class="label">Email</span></a></li>
 						</ul>
 				</div>
-			</header>
-					<section id="top">
+			</div>
+			<div id="main">
+					<section id="top" class="one dark cover">
+						<div class="container">
 							<header>
 								<h2 class="alt">Hi! I'm <strong>Roland</strong>, a student at softserve IT academy </h2>
 								<p>This is my first personal website.<br />
 								Don't worry if there is some mistakes, I will fix it verry soon!!</p>
-								<a href="#"><img src="status.jpg" alt="status" width="400" height="300" /></a>
 							</header>
 							<footer>
-								<a href="#portfolio">My portfolio</a>
+								<a href="#contact" class="button scrolly">Contact me</a>
 							</footer>
+							</div>
 					</section><hr />
-					<section id="portfolio">
+					
+					<section id="portfolio" class="two">
+						<div class="container">
 							<header>
 								<h2>Portfolio</h2>
 							</header>
@@ -51,57 +57,67 @@
 							lèvre colleuse, sur laquelle une de ces dents empiétait comme la défense d'un éléphant, de ce menton fourchu; et surtout 
 							de la physionomie répandue sur tout cela; de ce mélange de malice, d'étonnement et de tristesse. Qu'on rêve, si l'on peut, 
 							cet ensemble.</p>
-									<article>
-										<a href="#"><img src="dream-big.jpg" alt="dream" width="400" height="300" /></a>
+						<div class="row">
+							<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="etudes.html" class="image fit"><img src="dream-big.jpg" alt="dream" width="400" height="300" /></a>
 										<header>
 											<h3>This is an article</h3>
 										</header>
 									</article>
-									<article>
-										<a href="#" class="image fit"><img src="car.jpg" alt="car" width="400" height="300" /></a>
+									<article class="item">
+										<a href="skills.html" class="image fit"><img src="car.jpg" alt="car" width="400" height="300" /></a>
 										<header>
 											<h3>An other article</h3>
 										</header>
 									</article>
-									<article>
-										<a href="#"><img src="dev.jpg" alt="dev" width="400" height="300" /></a>
+									</div>
+									<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="services.html" class="image fit"><img src="miss.jpg" alt="miss" width="400" height="300" /></a>
 										<header>
 											<h3>An other one</h3>
 										</header>
 									</article>
-									<article>
-										<a href="#"><img src="miss.jpg" alt="miss" width="400" height="300" /></a>
+									<article class="item">
+										<a href="social.html" class="image fit"><img src="dev.png" alt="dev" width="400" height="300" /></a>
 										<header>
 											<h3>One more article</h3>
 										</header>
 									</article>
-					</section><hr />
+									</div>
+							</div>		
+							</div>		
+					</section>
 					<section id="about" class="three">
+						<div class="container">
 							<header>
 								<h2>About Me</h2>
 							</header>
-							<a href="#"><img src="pied.jpg" alt="" /></a>
-						 <h4>je suis l'un de ces humains qui aiment s'epanuire completement<br />
-                le coeur ouver vers l'aventure j'ai grandis dans un environement<br />
-                plain air,j'ai toujours aimer la nature et plus il y a le cote ingenieur et curieux.<br />
-                j'ai fai des etude d'electronique industriel.<br />
-                a la base je voulais fair des etudes d'ingenieurie robotique, mais je me suis plutot<br />
-                tourner vers les telecommunicetion, car amoureux des relation umaine<br /> 
-                ces etudes me permetron de develloper des plus en plus ces relations<br />
-                J'ai le teint brun, mais assez uni; le front élevé et d'une raisonnable grandeur;<br /> 
-                les yeux noirs, petits et enfoncés, et les sourcils noirs et épais, mais bien tournés.<br /> 
-                Je serais fort empêché de dire de quelle sorte j'ai le nez fait, car il n'est ni camus,<br /> 
-                ni aquilin, ni gros, ni pointu (...) tout ce que je sais c'est qu'il est plutot grand que petit,<br /> 
-                et qu'il descend un peu trop bas. J'ai la bouche grande et les lèvres assez rouges d'ordinaire,<br /> 
-                et ni bien ni mal taillée. J'ai les dents blanches et passablement bien rangées.<br /> 
-                On m'a dit autrefois que j'avais un peu trop de menton: je viens de me regarder dans le miroir<br />
-                pour savoir ce qu'il en est, et je ne sais pas trop bien qu'en juger.<br />
-                Pour le tour du visage je l'ai carré ou en ovale; lequel des deux,<br /> 
-                il me serait fort difficile de le dire. J'ai les cheveux noirs, naturellement frisés,<br />
+							<a href="#" class="image featured"><img src="pied.jpg" alt="" /></a>
+						 <h4>je suis l'un de ces humains qui aiment s'epanuire completement
+                le coeur ouver vers l'aventure j'ai grandis dans un environement
+                plain air,j'ai toujours aimer la nature et plus il y a le cote ingenieur et curieux.
+                j'ai fai des etude d'electronique industriel.
+                a la base je voulais fair des etudes d'ingenieurie robotique, mais je me suis plutot
+                tourner vers les telecommunicetion, car amoureux des relation umaine 
+                ces etudes me permetron de develloper des plus en plus ces relations
+                J'ai le teint brun, mais assez uni; le front élevé et d'une raisonnable grandeur; 
+                les yeux noirs, petits et enfoncés, et les sourcils noirs et épais, mais bien tournés. 
+                Je serais fort empêché de dire de quelle sorte j'ai le nez fait, car il n'est ni camus, 
+                ni aquilin, ni gros, ni pointu (...) tout ce que je sais c'est qu'il est plutot grand que petit, 
+                et qu'il descend un peu trop bas. J'ai la bouche grande et les lèvres assez rouges d'ordinaire, 
+                et ni bien ni mal taillée. J'ai les dents blanches et passablement bien rangées.
+                On m'a dit autrefois que j'avais un peu trop de menton: je viens de me regarder dans le miroir
+                pour savoir ce qu'il en est, et je ne sais pas trop bien qu'en juger.
+                Pour le tour du visage je l'ai carré ou en ovale; lequel des deux,
+                il me serait fort difficile de le dire. J'ai les cheveux noirs, naturellement frisés,
                 et avec cela épais et assez longs.</h4>
-                <hr />
+                
+                    </div>
 					</section>
-						<section id="contact">
+						<section id="contact" class="four">
+						  <div class="container">
 							<header>
 								<h2>Contact</h2>
 							</header>
@@ -109,21 +125,25 @@
 							please feel free to contact me and I will have the appropriate 
 							professional address it. </p>
 							<form method="post" action="#">
-									<div><input type="text" name="name" placeholder="Name" /></div>
-									<div><input type="text" name="email" placeholder="Email" /></div>
-									<div>
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="12u$">
 										<textarea name="message" placeholder="Message"></textarea>
 									</div>
-									<div>
+									<div class="12u$">
 										<input type="submit" value="Send Message" />
 									</div>
+									</div>
 							</form>
+							</div>
 					</section><hr />
 			<div id="footer">
 					<ul class="copyright">
 						<li>&copy; Rkariz inc. All rights reserved.</li>
 						<li>Design: <a href="https://www.facebook.com/roland.umbandolo">Roland Umba</a></li>
 					</ul>
+			</div>
 			</div>
 	</body>		
 </html>
