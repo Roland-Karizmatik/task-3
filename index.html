@@ -2,15 +2,19 @@
 <html>
     <head> 
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
         <title> practice </title>
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="main.css" />
+        <link rel="shortcut icon" href="hobbiea.jpg"/>
     </head>
     <body>
         <div id="header">
 				<div class="top">
 						<div id="logo">
-						<span class="avatar"><img src="way-on.jpg" alt="logo" width="78" height="48" /></span>
+						<span class="avatar"><img src="way-on.jpg" alt="logo" /></span>
 							<h1 class="title">Roland Umba</h1>
 							<p>Telecom Engineer and front end developer</p>
 						</div>
@@ -25,9 +29,9 @@
 				</div>
 				<div class="bottom">
 						<ul class="icons">
-							<li><a href="https://twitter.com/?lang=fr" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.facebook.com/roland.umbandolo" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="https://github.com/" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://twitter.com/?lang=fr" class="icon fa-twitter"><span class="label" >Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/roland.umbandolo" class="icon fa-facebook"><span class="label" >Facebook</span></a></li>
+							<li><a href="https://github.com/" class="icon fa-github"><span class="label" >Github</span></a></li>
 							<li><a href="https://www.google.com/intl/fr/mail/help/about.html" class="icon fa-gmail"><span class="label">Email</span></a></li>
 						</ul>
 				</div>
@@ -38,7 +42,7 @@
 							<header>
 								<h2 class="alt">Hi! I'm <strong>Roland</strong>, a student at softserve IT academy </h2>
 								<p>This is my first personal website.<br />
-								Don't worry if there is some mistakes, I will fix it verry soon!!</p>
+								Don't worry if there are some mistakes, I will fix it verry soon!!</p>
 							</header>
 							<footer>
 								<a href="#contact" class="button scrolly">Contact me</a>
@@ -74,20 +78,34 @@
 									</div>
 									<div class="4u 12u$(mobile)">
 									<article class="item">
+										<a href="services.html" class="image fit"><img src="etude.jpg" alt="miss" width="400" height="300" /></a>
+										<header>
+											<h3>An other one</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="social.html" class="image fit"><img src="dev.jpg" alt="dev" width="400" height="300" /></a>
+										<header>
+											<h3>One more article</h3>
+										</header>
+									</article>
+							</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
 										<a href="services.html" class="image fit"><img src="miss.jpg" alt="miss" width="400" height="300" /></a>
 										<header>
 											<h3>An other one</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="social.html" class="image fit"><img src="dev.png" alt="dev" width="400" height="300" /></a>
+										<a href="social.html" class="image fit"><img src="moi.jpg" alt="dev" width="400" height="300" /></a>
 										<header>
 											<h3>One more article</h3>
 										</header>
 									</article>
-									</div>
-							</div>		
-							</div>		
+							</div>
+						</div>
+					</div>	
 					</section>
 					<section id="about" class="three">
 						<div class="container">
@@ -124,15 +142,20 @@
 							<p>If you have any questions, concerns or input about any of the subjects 
 							please feel free to contact me and I will have the appropriate 
 							professional address it. </p>
-							<form method="post" action="#">
+							<form>
 								<div class="row">
-									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="6u 12u$(mobile)">
+										<label for="name">Your name:</label>
+										<input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u 12u$(mobile)">
+										<label for="email">Your Email:</label>
+									<input id="email" type="email" placeholder="Email" /></div>
 									<div class="12u$">
-										<textarea name="message" placeholder="Message"></textarea>
+										<label for="msg">Message:</label>
+										<textarea id="msg" name="message" placeholder="Message"></textarea>
 									</div>
 									<div class="12u$">
-										<input type="submit" value="Send Message" />
+										<button id="btn-send">Send Message</button>
 									</div>
 									</div>
 							</form>
@@ -145,5 +168,19 @@
 					</ul>
 			</div>
 			</div>
-	</body>		
+		<script src="//code.jquery.com/jquery-2.2.2.min.js"   
+            integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="  
+            crossorigin="anonymous">
+        </script>        	
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" 
+            crossorigin="anonymous">
+        </script>
+        <script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.scrollzer.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/util.js"></script>
+        <script src="js/index.js"></script>
+		</body>		
 </html>
